@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/popup.css">
+  </head>
+  <body>
+    <div class="body-inner-wrapper">
+      <div class="content-max-size-wrapper">
+        <div class="header">CodeForces Parser</div>
+      </div>
+      <div class="divider"></div>
+      <div class="content-max-size-wrapper">
+        <div class="description">Open any problem, or any contest, and download all the associated test cases in a single click. Make sure your download path below is set correctly.</div>
+        <div class="settings-title">Settings</div>
+      </div>
+      <div class="divider"></div>
+      <div class="content-max-size-wrapper">
+          <div class="setting-label">Save Directory</div>
+          <div>
+            <input class="setting-input" placeholder="./CodeForces" id="saveDirectoryInput">
+            <button class="setting-input-save-btn" id="saveSaveDirectoryBtn">Save</button>
+          </div>
+          <br />
+          <div class="setting-error" id="saveDirectorySettingError" style="display: none;"> Invalid save directory. Please make sure it is a valid relative path with either no prefix or "./"</div>
+
+          <div class="setting-label-caption">The save folder must be in your downloads folder. The path above must be relative to your downloads folder. 
+            For example, if your folder is in "/Users/name/Downloads/Coding/Competitive/CodeForces/" (on mac) enter "Coding/Competitive/CodeForces above". 
+            Downloading a set of test cases will make a new subdirectory contestID/problemLetter/ to save the input/output files. </div>
+
+            <div class="setting-label">Flat File Structure</div>
+            <label class="switch switch-setting">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+
+            <div class="setting-label">Virtual Contest Download</div>
+            <label class="switch switch-setting">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            
+      </div>
+    </div>
+    <script src="scripts/popup.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.parseButton {
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+    padding: 15px 8px 15px 8px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+.parseButton:hover {
+    cursor: pointer;
+}
+
+.statusText {
+    visibility: hidden;
+    margin: 0px;
+}
+
+.statusTextError {
+    visibility:visible;
+    color: red;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 6px 0px 20px 0px;
+}
+
+.statusTextSuccess {
+    visibility:visible;
+    color: green;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 6px 0px 20px 0px;
+}

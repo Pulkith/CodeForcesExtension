@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CodeForces Parser",
+  "description": "Parse codeforces test cases so you can focus on solving problems.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["css/content.css"],
+      "matches": [
+        "https://codeforces.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "downloads",
+    "<all_urls>",
+    "tabs",
+    "background",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+}
